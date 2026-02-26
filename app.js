@@ -11,48 +11,49 @@
   // ==========================================
 
   const HIPPODROMES = [
-    'Vincennes', 'Longchamp', 'Auteuil', 'Chantilly', 'Deauville',
-    'Saint-Cloud', 'Maisons-Laffitte', 'Enghien', 'Cagnes-sur-Mer',
-    'ParisLongchamp', 'Pau', 'Lyon-Parilly', 'Cabourg', 'Laval'
+    'Ouagadougou', 'Bobo-Dioulasso', 'Koudougou', 'Banfora',
+    'Ouahigouya', 'Kaya', 'Dédougou', 'Fada N\'Gourma',
+    'Tenkodogo', 'Ziniaré', 'Manga', 'Gaoua',
+    'Dori', 'Kongoussi'
   ];
 
   const HORSE_NAMES = [
-    'Doyen du Clos', 'Flamme Bleue', 'Eclair du Soir', 'Tornade Noire',
-    'Prince Galant', 'Belle Etoile', 'Roi du Nord', 'Dame de Coeur',
-    'Foudre Rapide', 'Spirit du Vent', 'Ombre Dorée', 'Capitaine Brave',
-    'Lady Fortune', 'Valse Royale', 'Baron du Lys', 'Comète Céleste',
-    'Duc de Fer', 'Perle Marine', 'Titan Noir', 'Aurore Magique',
-    'Chevalier Blanc', 'Saphir Bleu', 'Diamant Rose', 'Tempête Verte',
-    'Noble Coeur', 'Zéphyr Léger', 'Luna Stellaire', 'Hercule Fort',
-    'Mystère Sombre', 'Victoire Aimée', 'Orage Puissant', 'Sirène Dorée',
-    'Fantôme Gris', 'Rêve Éternel', 'Jaguar Félin', 'Cascade Vive',
-    'Merlin Sage', 'Athéna Forte', 'Zeus Tonnerre', 'Apollon Brillant'
+    'Wend Panga', 'Sabari', 'Barkwendé', 'Faso Djan',
+    'Tégwendé', 'Nongma', 'Wendmi', 'Burkindi',
+    'Kiswendé', 'Raogo', 'Poko Diamant', 'Salam du Sahel',
+    'Nogma Éclair', 'Pagla Tonnerre', 'Sidwaya', 'Zoodo',
+    'Tiiga Noble', 'Belem Star', 'Naaba Royal', 'Wakat Rapide',
+    'Bazèga Foudre', 'Sindou Champion', 'Karfiguéla', 'Dafra Prince',
+    'Ténéré Brave', 'Mouhoun Force', 'Nakambé Star', 'Kanazoé Vif',
+    'Yennenga', 'Ouidi Courage', 'Kompienga', 'Banwa Éclair',
+    'Tibo Puissant', 'Laafi Bonheur', 'Nayala Express', 'Zorgho Spirit',
+    'Tampouy Flash', 'Dassari Belle', 'Lobi Champion', 'Gurunsi Fier'
   ];
 
   const JOCKEYS = [
-    'A. Hamelin', 'F. Nivard', 'J. Gelormini', 'E. Raffin', 'M. Abrivard',
-    'B. Rochard', 'D. Bonne', 'C. Soumillon', 'P. Boudot', 'M. Guyon',
-    'A. Lemaitre', 'S. Pasquier', 'O. Peslier', 'G. Benoist', 'T. Bachelot',
-    'J. Moisan', 'V. Cheminaud', 'R. Thomas', 'L. Dubroeucq', 'P. Bazire'
+    'I. Ouédraogo', 'M. Sawadogo', 'A. Compaoré', 'S. Kaboré', 'D. Traoré',
+    'B. Zongo', 'H. Somé', 'Y. Coulibaly', 'K. Diallo', 'P. Kindo',
+    'F. Nikiéma', 'T. Bamba', 'R. Sanou', 'J. Tapsoba', 'O. Ilboudo',
+    'L. Zoungrana', 'E. Kaboré', 'N. Ouattara', 'C. Dao', 'G. Bationo'
   ];
 
   const ENTRAINEURS = [
-    'P. Quinton', 'J.M. Bazire', 'S. Guarato', 'F. Souloy', 'R. Lecomte',
-    'A. Fabre', 'C. Laffon-Parias', 'F. Head', 'J.C. Rouget', 'Y. Bonnefoy',
-    'M. Delzangles', 'H.A. Pantall', 'A. Reynier', 'C. Ferland', 'E. Clayeux'
+    'A. Kaboré', 'M. Ouédraogo', 'S. Compaoré', 'I. Traoré', 'B. Sawadogo',
+    'D. Zongo', 'K. Somé', 'F. Coulibaly', 'H. Diallo', 'Y. Sanou',
+    'T. Nikiéma', 'R. Ilboudo', 'J. Ouattara', 'P. Tapsoba', 'L. Bationo'
   ];
 
   const RACE_NAMES = [
-    'Prix de Vincennes', 'Prix du Jockey Club', 'Prix de l\'Arc de Triomphe',
-    'Prix d\'Amérique', 'Prix de Cornulier', 'Grand Steeple-Chase',
-    'Prix Ganay', 'Prix du Cadran', 'Prix de Diane', 'Prix Vermeille',
-    'Prix Robert Papin', 'Prix Maurice de Gheest', 'Prix Jean Prat',
-    'Prix du Président de la République', 'Prix de France',
-    'Prix Henri Delamarre', 'Prix Paul Viel', 'Prix de Croix',
-    'Prix des Lilas', 'Prix de la Forêt', 'Prix Foy',
-    'Prix du Petit Couvert', 'Prix Marcel Boussac', 'Prix de Condé',
-    'Prix de Fontainebleau', 'Prix de Lutèce', 'Prix de Normandie',
-    'Grand Prix de Paris', 'Prix du Bois', 'Prix de Barbeville'
+    'Grand Prix de Ouagadougou', 'Prix du Faso', 'Prix de l\'Indépendance',
+    'Prix du Sahel', 'Grand Prix de Bobo-Dioulasso', 'Prix du Mouhoun',
+    'Prix de la Réconciliation', 'Prix du SIAO', 'Prix Yennenga',
+    'Grand Prix du Kadiogo', 'Prix de Banfora', 'Prix des Cascades',
+    'Prix du Nahouri', 'Prix Thomas Sankara', 'Prix de la CEDEAO',
+    'Prix du Comoé', 'Prix de Koudougou', 'Prix du Boulkiemdé',
+    'Prix de la Paix', 'Prix du Nakambé', 'Prix de Ziniaré',
+    'Grand Prix de l\'Oubritenga', 'Prix de la Solidarité', 'Prix du Sourou',
+    'Prix de Ouahigouya', 'Prix du Yatenga', 'Prix de Dédougou',
+    'Grand Prix National', 'Prix du Bazèga', 'Prix de Kaya'
   ];
 
   // ==========================================
@@ -108,11 +109,11 @@
   function generateInsight(horseName) {
     const insights = [
       `${horseName} montre une forme ascendante sur ses 3 dernières courses avec un temps moyen en progression constante.`,
-      `Terrain favorable aujourd'hui. ${horseName} excelle sur ce type de piste et cette distance.`,
+      `Terrain favorable aujourd'hui. ${horseName} excelle sur ce type de piste sahélienne et cette distance.`,
       `${horseName} retrouve son jockey de prédilection après 2 courses décevantes. Le duo affiche 40% de victoires ensemble.`,
       `Attention à ${horseName} qui revient après un repos et pourrait créer la surprise à une belle cote.`,
-      `${horseName} est en pleine confiance après sa victoire au Prix de France. Profil idéal pour cette course.`,
-      `Surface lourde attendue, ce qui convient parfaitement au profil de ${horseName} qui excelle sur terrain souple.`,
+      `${horseName} est en pleine confiance après sa victoire au Grand Prix de Ouagadougou. Profil idéal pour cette course.`,
+      `Chaleur prévue aujourd'hui, ce qui convient au profil de ${horseName} habitué aux conditions du Burkina.`,
       `${horseName} a un excellent palmarès sur cet hippodrome avec 3 victoires en 5 participations.`,
     ];
     return pick(insights);
@@ -149,8 +150,8 @@
       type,
       time: `${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')}`,
       distance: pick(distances),
-      terrain: pick(['Bon', 'Souple', 'Léger', 'Lourd', 'Collant', 'Très Souple']),
-      dotation: `${rand(15, 120)}000`,
+      terrain: pick(['Bon', 'Sec', 'Sablonneux', 'Poussiéreux', 'Ferme', 'Souple']),
+      dotation: `${rand(500, 5000)}000`,
       status,
       horses,
       pronostic: generatePronostic(horses),
@@ -188,10 +189,10 @@
     return {
       arrivee: top5,
       rapports: {
-        'Simple gagnant': (top5[0].odds * (0.8 + Math.random() * 0.4)).toFixed(2),
-        'Simple placé': (top5[0].odds * 0.4).toFixed(2),
-        'Couplé gagnant': (top5[0].odds * top5[1].odds * 0.6).toFixed(2),
-        'Tiercé ordre': (top5[0].odds * top5[1].odds * top5[2].odds * 0.3).toFixed(2),
+        'Simple gagnant': (top5[0].odds * (0.8 + Math.random() * 0.4) * 500).toFixed(0),
+        'Simple placé': (top5[0].odds * 0.4 * 500).toFixed(0),
+        'Couplé gagnant': (top5[0].odds * top5[1].odds * 0.6 * 500).toFixed(0),
+        'Tiercé ordre': (top5[0].odds * top5[1].odds * top5[2].odds * 0.3 * 500).toFixed(0),
       },
       tierce,
     };
@@ -202,7 +203,7 @@
     const types = ['Trot', 'Galop', 'Obstacle'];
     const type = types[idx % types.length];
     const numRaces = rand(7, 9);
-    const baseHour = rand(12, 14);
+    const baseHour = rand(8, 11);
     const races = [];
     for (let i = 0; i < numRaces; i++) {
       races.push(generateRace(idx, i, hippodrome, type, baseHour));
@@ -576,7 +577,7 @@
           <span class="info-separator">|</span>
           <span>🕐 ${race.time}</span>
           <span class="info-separator">|</span>
-          <span>💰 ${parseInt(race.dotation).toLocaleString()}€</span>
+          <span>💰 ${parseInt(race.dotation).toLocaleString()} FCFA</span>
         </div>
       </div>
 
@@ -800,7 +801,7 @@
 
     html += `</div>
       <div class="section-header">
-        <div class="section-title">Rapports PMU</div>
+        <div class="section-title">Rapports LONAB</div>
       </div>
       <div class="result-rapports">`;
 
@@ -808,7 +809,7 @@
       html += `
         <div class="rapport-chip">
           <span class="rapport-label">${label}</span>
-          <span class="rapport-value">${value}€</span>
+          <span class="rapport-value">${value} FCFA</span>
         </div>`;
     });
 
@@ -956,7 +957,7 @@
       html += `
           <div class="rapport-chip">
             <span class="rapport-label">${label}</span>
-            <span class="rapport-value">${value}€</span>
+            <span class="rapport-value">${value} FCFA</span>
           </div>`;
     });
 
@@ -972,8 +973,8 @@
     const html = `
       <div class="profile-header">
         <div class="profile-avatar">TS</div>
-        <div class="profile-name">TurfScore Pro</div>
-        <div class="profile-subtitle">Membre depuis Janvier 2025</div>
+        <div class="profile-name">TurfScore BF Pro</div>
+        <div class="profile-subtitle">Membre depuis Janvier 2025 - Ouagadougou</div>
       </div>
 
       <div class="profile-stats">
@@ -1039,8 +1040,8 @@
       </div>
 
       <div style="text-align:center;padding:24px;color:var(--text-muted);font-size:11px">
-        TurfScore v1.0.0<br>
-        Pronostics & Résultats Hippiques
+        TurfScore BF v1.0.0<br>
+        Pronostics & Résultats Hippiques - Burkina Faso
       </div>`;
 
     mainContent.innerHTML = html;
