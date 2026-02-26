@@ -242,6 +242,14 @@ body {
 /* ==========================================
    Live Race Banner
    ========================================== */
+.pmub-banner {
+  background: linear-gradient(135deg, #2a1f00 0%, #1a1200 100%);
+  border-radius: var(--radius-lg);
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(255, 215, 64, 0.2);
+}
+
 .live-banner {
   background: linear-gradient(135deg, #1a2744 0%, #0f1a30 100%);
   border-radius: var(--radius-lg);
